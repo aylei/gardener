@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Chart to setup rbac for cloud config bootstrapping.
+name: shoot-cloud-config-rbac
+version: 0.1.0

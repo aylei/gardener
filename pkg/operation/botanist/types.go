@@ -25,6 +25,7 @@ import (
 // Botanist is a struct which has methods that perform cloud-independent operations for a Shoot cluster.
 type Botanist struct {
 	*operation.Operation
-	DefaultDomainSecret *corev1.Secret
-	mutex               sync.RWMutex
+	DefaultDomainSecret  *corev1.Secret
+	BootstrapTokenSecret *corev1.Secret
+	mutex                sync.RWMutex
 }
